@@ -3,19 +3,24 @@
 /* Estilizações Gerais */
 
 :root {
-  --cor-fundo: #f2f2f2;
+  --cor-fundo: #fafafa;
+  --cor-fundo-2: #ffffff;
+  --cor-fonte: #000000;
+  --cor-link: #878787;
+  --cor-detalhe: #d36135;
+  /* --cor-fundo: #f2f2f2;
   --cor-fundo-2: #a6a6a6;
   --cor-fundo-link: #e4d914;
   --cor-fundo-link-2: #f3f702;
   --cor-fonte: rgb(10, 10, 10);
-  --cor-detalhe: 2B4570;
+  --cor-detalhe: #2b4570; */
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -31,6 +36,33 @@ li {
 a {
   text-decoration: none;
   display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--cor-fonte);
+  letter-spacing: 0.4rem;
+  padding: 50px 50px;
+}
+
+p {
+  font-size: 1.75rem;
+  text-align: justify;
+  padding: 20px;
+  line-height: 2.5;
+}
+
+p::first-letter {
+  font-size: 8rem;
+  line-height: 1;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 body {
@@ -41,7 +73,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1500px;
   padding: 2rem 2rem;
 }
 
@@ -49,10 +81,11 @@ body {
 
 /* Estilização do Header */
 
-header {
-  /* background-color: var(--cor-fundo); */
+.header {
+  background-color: var(--cor-fundo);
   display: flex;
   align-items: center;
+  padding: 100px 50px;
 }
 
 /* Fim da Estilização do Header */
@@ -67,7 +100,6 @@ header {
 }
 
 .menu a {
-  /* background-color: var(--cor-fundo-link-2); */
   color: var(--cor-fonte);
   padding: 0.8rem 1.2rem;
   border-radius: 1rem;
@@ -75,7 +107,7 @@ header {
 }
 
 .menu a:hover {
-  background-color: var(--cor-fundo-link);
+  color: var(--cor-link);
 }
 
 /*  Fim da Estilização do Menu */
