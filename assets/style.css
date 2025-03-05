@@ -15,7 +15,7 @@
   --cor-fonte-1: #000000;
   --cor-fonte-2: #878787;
   --cor-detalhe-1: #d36235;
-  --cor-detalhe-2: #d3623583;
+  --cor-detalhe-2: #e5c25b;
 }
 
 * {
@@ -121,17 +121,25 @@ body {
 }
 
 /*  Estilização do Menu */
+.hamburger {
+  display: none;
+}
+
+.link-loja {
+  display: none;
+}
 
 .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
 .menu .link-menu {
-  padding: 0.8rem 0.8rem;
+  padding: 0.8rem;
   font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.4rem;
@@ -141,10 +149,29 @@ body {
   color: var(--cor-fonte-2);
 }
 
+.link-loja-menu,
+.link-loja {
+  font-family: "Normafixed";
+  background-color: var(--cor-detalhe-1);
+  color: var(--cor-fundo-2);
+  border-radius: 50px;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.link-loja-menu:hover,
+.link-loja:hover {
+  background-color: var(--cor-detalhe-2);
+  color: var(--cor-fonte-2);
+}
+
 .icones {
   display: flex;
   gap: 10px;
   align-items: center;
+  padding: 10px 10px;
 }
 
 .link-icone svg {
@@ -154,6 +181,58 @@ body {
 
 .link-icone svg:hover {
   fill: var(--cor-fonte-2);
+}
+
+@media (max-width: 1080px) {
+  .menu .link-menu {
+    padding: 0.4rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .link-icone svg {
+    width: 20px;
+  }
+
+  .link-loja-menu {
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 785px) {
+  .hamburger {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px;
+    padding-left: 20px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .link-loja {
+    display: inline-block;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+  }
+
+  .icones {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
 }
 
 /*  Fim da Estilização do Menu */
