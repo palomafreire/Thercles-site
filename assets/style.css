@@ -281,7 +281,7 @@ body {
   grid-row: span 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 785px) {
   .galeria {
     grid-template-columns: 1fr;
   }
@@ -325,4 +325,50 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 785px) {
+  .sobre {
+    padding-top: 100px;
+  }
+
+  .sobre h1 {
+    font-size: 3rem;
+    max-width: 500px;
+    letter-spacing: 0.1rem;
+  }
+
+  .sobre img {
+    max-width: 450px;
+  }
+
+  .sobre p {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sobre h1 {
+    font-size: 2rem;
+    width: 200px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .sobre img {
+    max-width: 300px;
+  }
+
+  .sobre p {
+    max-width: 350px;
+  }
+}
+
 /* Fim da Estilização do sobre */
+
+/* font-family: "Poppins", Arial, sans-serif;
+font-size: 1rem;
+font-weight: 300;
+letter-spacing: 0.1rem;
+text-align: left;
+padding: 10px;
+line-height: 1.7;
+color: var(--cor-fonte-2); */
